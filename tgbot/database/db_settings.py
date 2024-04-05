@@ -9,7 +9,7 @@ from tgbot.database.db_helper import dict_factory, update_format
 
 # Модель таблицы
 class SettingsModel(BaseModel):
-    status_work: str
+    status_work: str  # Статус работы бота
 
 
 # Работа с настройками

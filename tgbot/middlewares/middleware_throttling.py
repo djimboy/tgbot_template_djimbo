@@ -10,7 +10,7 @@ from cachetools import TTLCache
 
 # Антиспам
 class ThrottlingMiddleware(BaseMiddleware):
-    def __init__(self, default_rate: Union[int, float] = 1) -> None:
+    def __init__(self, default_rate: Union[int, float] = 0.5) -> None:
         self.default_rate = default_rate
 
         self.users = TTLCache(maxsize=10_000, ttl=600)

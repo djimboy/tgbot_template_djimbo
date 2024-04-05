@@ -12,7 +12,7 @@ router = Router(name=__name__)
 # @router.errors(ExceptionTypeFilter(TelegramForbiddenError))
 # class MyHandler(ErrorHandler):
 #     async def handle(self):
-#         pass
+#         ...
 
 
 # Ошибка с редактированием одинакового сообщения

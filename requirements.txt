@@ -1,10 +1,10 @@
-APScheduler~=3.10.4
-aiogram~=3.4.1
-colorlog~=6.8.2
-pytz~=2024.1
+APScheduler==3.10.4
+aiogram==3.4.1
+colorlog==6.8.2
+pytz==2024.1
 typing~=3.7.4.3
 aiohttp~=3.9.1
-cachetools~=5.3.3
+cachetools==5.3.3
 colorama~=0.4.5
 aiofiles~=23.2.1
 pydantic~=2.5.2
