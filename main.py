@@ -5,6 +5,7 @@ import sys
 
 import colorama
 from aiogram import Bot, Dispatcher
+from aiogram.client.default import DefaultBotProperties
 
 from tgbot.data.config import BOT_TOKEN, BOT_SCHEDULER, get_admins
 from tgbot.database.db_helper import create_dbx
@@ -28,7 +29,12 @@ async def main():
     BOT_SCHEDULER.start()  # Запуск Шедулера
     dp = Dispatcher()  # Образ Диспетчера
     arSession = AsyncRequestSession()  # Пул асинхронной сессии запросов
-    bot = Bot(token=BOT_TOKEN, parse_mode="HTML")  # Образ Бота
+    bot = Bot(  # Образ Бота
+        token=BOT_TOKEN,
+        default=DefaultBotProperties(
+            parse_mode="HTML,"
+        ),
+    )
 
     register_all_middlwares(dp)  # Регистрация всех мидлварей
     register_all_routers(dp)  # Регистрация всех роутеров
