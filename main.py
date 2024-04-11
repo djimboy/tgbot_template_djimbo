@@ -32,7 +32,7 @@ async def main():
     bot = Bot(  # Образ Бота
         token=BOT_TOKEN,
         default=DefaultBotProperties(
-            parse_mode="HTML,"
+            parse_mode="HTML",
         ),
     )
 
