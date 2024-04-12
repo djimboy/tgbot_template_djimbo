@@ -195,9 +195,9 @@ def convert_date(from_time, full=True, second=True) -> Union[str, int]:
 
 
 # Генерация уникального айди
-def gen_id() -> int:
+def gen_id(len_id: int = 16) -> int:
     mac_address = uuid.getnode()
-    time_unix = int(str(time.time_ns())[:16])
+    time_unix = int(str(time.time_ns())[:len_id])
 
     return mac_address + time_unix
 
