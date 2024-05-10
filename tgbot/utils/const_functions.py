@@ -173,7 +173,7 @@ def convert_date(from_time, full=True, second=True) -> Union[str, int]:
             else:
                 x_year, x_month, x_day = cache_date[2], cache_date[1], cache_date[0]
 
-            x_hour, x_minute, x_second = cache_time[0], cache_time[2], cache_time[2]
+            x_hour, x_minute, x_second = cache_time[0], cache_time[1], cache_time[2]
 
             from_time = f"{x_day}.{x_month}.{x_year} {x_hour}:{x_minute}:{x_second}"
         else:

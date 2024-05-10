@@ -1,5 +1,5 @@
 APScheduler==3.10.4
-aiogram==3.4.1
+aiogram==3.5.0
 colorlog==6.8.2
 pytz==2024.1
 typing~=3.7.4.3
