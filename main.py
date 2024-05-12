@@ -66,7 +66,7 @@ async def main():
 
 
 if __name__ == "__main__":
-    create_dbx()  # Генерация Базы Данных
+    create_dbx()  # Генерация Базы Данных и Таблиц
 
     try:
         if sys.platform == 'win32':  # Запуск на 32-х битных системах
